@@ -7,12 +7,13 @@ int main()
     int skip = 5;
     while (i < 20)
     {
-        if (i == skip)
+        i++;
+        if (i % 2 == 0)
         {
             continue;
         }
+        printf("%d\n", i);
     }
-    
 
     return 0;
 }
